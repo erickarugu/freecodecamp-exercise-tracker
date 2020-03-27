@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Free Code Camp Challenge">
+      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+      <meta name="author" content="John Doe">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Exercise Tracker | Free Code Camp</title>
+      
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container">
+         <h1>Exercise tracker <i class="fa fa-clock-o"></i></h1>
+          <form action="/api/exercise/new-user" method="post">
+            <h3><i class="fa fa-user"></i> Create a New User</h3>
+            <!-- <p><code>POST /api/exercise/new-user</code></p> -->
+            <input id="uname" type="text" name="username" placeholder="Username">
+            <input type="submit" value="Submit">
+          </form>
+          <form action="/api/exercise/add" method="post">
+            <h3><i class="fa fa-plus"></i> Add Exercises</h3>
+            <input id="uid" type="text" name="userId" placeholder="UserId*">
+            <input id="desc" type="text" name="description" placeholder="Description*">
+            <input id="dur" type="text" name="duration" placeholder="Duration* (mins.)">
+            <input id="dat" type="text" name="date" placeholder="Date (yyyy-mm-dd)">
+            <input type="submit" value="Submit">
+          </form>
+        <!--
+          <p><strong>GET users's exercise log: </strong><code>GET /api/exercise/log?{userId}[&amp;from][&amp;to][&amp;limit]</code></p>
+          <p><strong>{ }</strong> = required, <strong>[ ]</strong> = optional</p>
+          <p><strong>from, to</strong> = dates (yyyy-mm-dd); <strong>limit</strong> = number</p> -->
+      </div>
+     <footer>
+       Developed By  <i class="fa fa-heart"></i> <a href="https://erickarugu32.github.io">Eric Karugu</a>
+      
+     </footer>
+   </body>
+
+</html>
